@@ -43,23 +43,38 @@ let getInput = () => {
 
 
 
-//Function for displayimg the data
+//Function for displayimg the data : -
 
 let displayData = () => {
-    posts.innerHTML += 
-        `
+    posts.innerHTML += `
       <div>
         <p>${collect.text}</p>
         <span class="option">
-          <i class="bi bi-pencil-square"></i>
-          <i class="bi bi-trash3"></i>
+          <i onclick = "editPost(this)" class="bi bi-pencil-square"></i>
+          <i class="bi bi-trash3" onclick = "deletion(this)" ></i>
         </span>
       </div>
-    `
+    `;
     input.value = ""; //Resseting the form after posting stuffs
 }
 
 
 
+// Function for post deletion : - 
 
 
+let deletion = (f) => {
+  f.parentElement.parentElement.remove();
+}
+
+
+
+// Function for editing the post : -
+
+let editPost = (s) => {
+  
+  console.log("hitting edit button !");
+  input.value = s.parentElement.previousElementSibling.innerHTML;
+  s.parentElement.parentElement.remove();
+ 
+}
