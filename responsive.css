@@ -1,0 +1,19 @@
+@media(max-width:1035px){
+    .container{
+        flex-direction: column;
+    }
+}
+@media(max-width:414px){
+    #posts div{
+        gap: 0px;
+    }
+    #posts p {
+    width: 177px;
+    }
+    .button-center{
+        text-align: center;
+    }
+    .container{
+        gap: 50px;
+    }
+}
