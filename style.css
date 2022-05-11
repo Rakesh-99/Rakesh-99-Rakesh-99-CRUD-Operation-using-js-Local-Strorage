@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100;200;300;400;500;600;700;800&display=swap');
+
+
+*{
+    box-sizing: border-box;
+    font-family: JetBrains Mono;
+    font-size: 13px;
+}
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;    
+    width: 100vw;
+}
+.container{
+    display: flex;
+    gap: 100px;
+}
+
+
+#posts div{
+    display: flex;
+    align-items: center;
+    gap: 100px;
+}
+.option{
+    display: flex;
+    gap: 50px;
+}
+.option i {
+    cursor: pointer;
+}
+#error{
+    color: red;
+}
+#posts p{
+    width: 400px;
+}
