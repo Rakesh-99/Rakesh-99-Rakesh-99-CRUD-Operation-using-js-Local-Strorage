@@ -59,13 +59,11 @@ textarea{
     border: 2px solid cornflowerblue;
     border-radius: 4px;
 }
-h3{
-    text-align: center;
-    text-decoration: underline;
-}
 label{
-    text-align: center;
+    font-size: 10px;
 }
-.right h5{
-    text-decoration: underline;
+
+::placeholder{
+    font-size: 9px;
+    color: rgb(172, 172, 172);
 }

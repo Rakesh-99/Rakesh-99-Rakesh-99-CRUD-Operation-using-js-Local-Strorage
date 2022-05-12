@@ -1,3 +1,6 @@
+alert("I welcome you to my To Do App !");
+
+
 let input = document.getElementById("input");
 let errormsg = document.getElementById("error");
 const formSubmit = document.getElementById("form");
